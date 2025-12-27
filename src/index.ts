@@ -1,18 +1,22 @@
 import { Hono } from 'hono'
-import { html } from "hono/html"
+import {hello_html_init} from "./hello-html";
+import {html} from "hono/html";
+import {hello_jsx_init} from "./hello-jsx";
 
 const app = new Hono()
 
 app.get('/', (c) => {
-  return c.html('Hello Hono!')
-})
-
-app.get('/hello/:username', (c) => {
-  const { username } = c.req.param()
   return c.html(
       html`<!doctype html>
-      <h1>Hello! ${username}!</h1>`
+      <ul>
+        <li><a href="/hello/html" target="_blank">Hello HTML</a> </li>
+        <li><a href="/hellojsx/jsx" target="_blank">Hello JSX</a> </li>
+      </ul>
+      `
   )
 })
+hello_html_init(app);
+hello_jsx_init(app);
 
 export default app
+
