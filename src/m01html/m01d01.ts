@@ -1,16 +1,13 @@
 import {Hono} from "hono";
-import { html } from "hono/html"
+import {html} from "hono/html"
+import {CODE} from "./m01d01_code";
 
 export const M01D01 = {
 	URL: '/m01/d01',
 }
+
 export function m01d01_init(app: Hono) {
 	app.get(M01D01.URL, (c) => {
-		// const code = html`
-		// 	{#include dev/svenehrke/demo/ssfepatterns/m01plain/m01d01_code}{/include}
-		//  @template.jte.plainjte.page01_code()
-		// `
-		const code = html``
 		return c.html(
 			html`<!DOCTYPE html>
 			<html lang="en">
@@ -23,7 +20,7 @@ export function m01d01_init(app: Hono) {
 			<div>
 				<h1>Application Page</h1>
 				<hr>
-				${code}
+				${CODE}
 			</div>
 			</body>
 			</html>`
