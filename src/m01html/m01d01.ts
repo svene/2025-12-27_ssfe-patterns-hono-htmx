@@ -6,6 +6,11 @@ export const M01D01 = {
 }
 export function m01d01_init(app: Hono) {
 	app.get(M01D01.URL, (c) => {
+		// const code = html`
+		// 	{#include dev/svenehrke/demo/ssfepatterns/m01plain/m01d01_code}{/include}
+		//  @template.jte.plainjte.page01_code()
+		// `
+		const code = html``
 		return c.html(
 			html`<!DOCTYPE html>
 			<html lang="en">
@@ -17,8 +22,8 @@ export function m01d01_init(app: Hono) {
 			<body class="page">
 			<div>
 				<h1>Application Page</h1>
-
-<!--				{#include dev/svenehrke/demo/ssfepatterns/m01plain/m01d01_code}{/include}-->
+				<hr>
+				${code}
 			</div>
 			</body>
 			</html>`
