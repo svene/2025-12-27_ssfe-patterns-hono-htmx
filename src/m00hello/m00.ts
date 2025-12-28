@@ -3,12 +3,12 @@ import {html} from "hono/html";
 import {hello_html_init} from "./hello-html";
 import {hello_jsx_init} from "./hello-jsx";
 
-export function m00_init(app: Hono) {
+function init(app: Hono) {
 	hello_html_init(app);
 	hello_jsx_init(app);
 }
 
-export function m00_menu() {
+function menu() {
 	return html`
 		<h1>First Steps</h1>
 		<ul>
@@ -17,3 +17,8 @@ export function m00_menu() {
 		</ul>
       `
 }
+
+export const m00 = {
+	init,
+	menu,
+};

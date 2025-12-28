@@ -1,7 +1,9 @@
 import { Hono } from 'hono'
 import {html} from "hono/html";
-import {m01_init, m01_menu} from "./m01html/m01";
-import {m00_init, m00_menu} from "./m00hello/m00";
+import {m00} from "./m00hello/m00";
+import {m01} from "./m01html/m01";
+import {m02} from "./m02jsx/m02";
+import {m03} from "./m03pages/m03";
 import { serveStatic } from 'hono/bun'
 
 const app = new Hono()
@@ -11,14 +13,17 @@ app.use('/static/*', serveStatic({ root: './' }))
 app.get('/', (c) => {
   return c.html(
       html`<!doctype html>
-      ${m00_menu()}
-      ${m01_menu()}
-      <h1>JSX</h1>
+      ${m00.menu()}
+      ${m01.menu()}
+      ${m02.menu()}
+      ${m03.menu()}
       `
   )
 })
-m00_init(app);
-m01_init(app);
+m00.init(app);
+m01.init(app);
+m02.init(app);
+m03.init(app);
 
 export default app
 

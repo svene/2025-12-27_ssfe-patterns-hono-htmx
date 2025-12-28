@@ -5,13 +5,13 @@ import {html} from "hono/html";
 import {M01D02, m01d02_init} from "./m01d02";
 import {m01d03} from "./m01d03";
 
-export function m01_init(app: Hono) {
+function init(app: Hono) {
 	m01d01_init(app);
 	m01d02_init(app);
 	m01d03.init(app);
 }
 
-export function m01_menu() {
+function menu() {
 	return html`
       <h1>HTML Helper</h1>
       <ul>
@@ -21,3 +21,8 @@ export function m01_menu() {
       </ul>
       `
 }
+
+export const m01 = {
+	init,
+	menu,
+};

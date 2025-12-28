@@ -3,6 +3,12 @@ import {Hono} from "hono";
 export function hello_jsx_init(app: Hono) {
 	app.get('/hellojsx/:username', (c) => {
 		const { username } = c.req.param();
+/*
+		const username =
+			c.req.param('username') ??
+			c.req.query('username') ??
+			'Guest'
+*/
 		const View = () => {
 			return (
 				<html>
