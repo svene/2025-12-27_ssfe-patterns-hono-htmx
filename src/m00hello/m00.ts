@@ -3,7 +3,6 @@ import {html} from "hono/html";
 import {hello_html_init} from "./hello-html";
 import {hello_jsx_init} from "./hello-jsx";
 
-
 export function m00_init(app: Hono) {
 	hello_html_init(app);
 	hello_jsx_init(app);

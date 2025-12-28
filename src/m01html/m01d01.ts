@@ -25,6 +25,5 @@ export function m01d01_init(app: Hono) {
 			</body>
 			</html>`
 		)
-	})
-
+	});
 }
