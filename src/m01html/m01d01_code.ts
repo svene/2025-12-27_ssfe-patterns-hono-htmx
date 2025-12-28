@@ -1,4 +1,4 @@
-import {html, raw} from "hono/html"
+import {html} from "hono/html"
 
 const TEMPLATE = `<h1>Application Page</h1>`;
 const ENDPOINT = `export function m01d01_init(app: Hono) {
