@@ -5,7 +5,7 @@ import {HelloWorldParams} from "../components/helloworldparams"
 const URL = '/m01/d03';
 function init(app: Hono) {
 	app.get(URL, (c) => {
-		const greetee = c.req.query('greetee') || '-';
+		const greetee = c.req.query('greetee') ?? '-';
 		return c.html(
 			html`<!DOCTYPE html>
 			<html lang="en">

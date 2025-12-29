@@ -15,17 +15,6 @@ function init(app: Hono) {
 	});
 }
 
-	/*
-			jsxRenderer((props, c) => {
-				return (
-					<DefaultLayout title={`Hello ${username}`}>
-						<HomePage username={username} />
-					</BulmaPage>
-				)
-			})
-	*/
-
-
 export const m03d01 = {
 	URL,
 	init,
