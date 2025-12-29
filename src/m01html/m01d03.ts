@@ -19,7 +19,7 @@ function init(app: Hono) {
 				<h1>Page and Component</h1>
 				<!-- Include Component:
 				first parameter passed literally from this template.
-				Second parameter coming in from controller through Model and passed to included template:
+				Second parameter coming in from HTTP-request:
 				-->
 				${HelloWorldParams({greeting: 'Hey', greetee})}
 				<hr>

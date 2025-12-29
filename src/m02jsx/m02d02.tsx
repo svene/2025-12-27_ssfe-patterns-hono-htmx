@@ -1,5 +1,7 @@
 import {Hono} from "hono";
-export const URL = '/m02/d01';
+import {HelloWorldJsx} from "../c00jsxcomponents/helloworldjsx";
+
+export const URL = '/m02/d02';
 
 function init(app: Hono) {
 	app.get(URL, (c) => {
@@ -12,7 +14,8 @@ function init(app: Hono) {
 
 			<body class="page">
 			<div>
-				<h1>Application Page</h1>
+				<h1>Page with Component</h1>
+				<HelloWorldJsx/>
 				<hr/>
 			</div>
 			</body>
@@ -21,7 +24,7 @@ function init(app: Hono) {
 	});
 }
 
-export const m02d01 = {
+export const m02d02 = {
 	URL,
 	init,
 }
