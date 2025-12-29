@@ -1,7 +1,13 @@
-import type { FC } from 'hono/jsx'
+import type { ComponentChildren } from 'hono/jsx'
 import {HEAD} from "../components/head";
 
-export const BulmaPage: FC<{ title?: string; children?: any }> = ({ title, children }) => (
+type BulmaPageProps = {
+	title?: string
+	children?: ComponentChildren
+}
+
+// export const BulmaPage = ({ title, children }: BulmaPageProps) => (
+export const BulmaPage = (props: { title: string, children: ComponentChildren }) => (
 	<html lang="en">
 	{HEAD}
 
@@ -9,9 +15,10 @@ export const BulmaPage: FC<{ title?: string; children?: any }> = ({ title, child
 	<div className="container mt-1">
 
 		<div className="p-1 mt-1">
-			{children}
+			{props.children}
 		</div>
 	</div>
 	</body>
 	</html>
-)
+);
+
