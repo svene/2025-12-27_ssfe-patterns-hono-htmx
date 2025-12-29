@@ -4,11 +4,13 @@ import {M01D01} from "./m01d01";
 import {html} from "hono/html";
 import {M01D02, m01d02_init} from "./m01d02";
 import {m01d03} from "./m01d03";
+import {m01d04} from "./m01d04";
 
 function init(app: Hono) {
 	m01d01_init(app);
 	m01d02_init(app);
 	m01d03.init(app);
+	m01d04.init(app);
 }
 
 function menu() {
@@ -18,6 +20,7 @@ function menu() {
         <li><a href="${M01D01.URL}" target="_blank">Basic HTML Page</a> </li>
         <li><a href="${M01D02.URL}" target="_blank">Basic HTML Page</a> </li>
         <li><a href="${m01d03.URL + '?greetee=You'}" target="_blank">Basic HTML Page</a> </li>
+        <li><a href="${m01d04.URL}" target="_blank">Basic HTML Page</a> </li>
       </ul>
       `
 }
