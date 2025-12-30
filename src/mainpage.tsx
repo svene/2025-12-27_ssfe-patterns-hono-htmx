@@ -1,6 +1,6 @@
 import {Hono} from "hono";
 import { serveStatic } from 'hono/bun'
-import {m00} from "./m00hello/m00.ts";
+import {m00, M00Menu} from "./m00hello/m00";
 import {m01, M01Menu} from "./m01html/m01";
 import {m02, M02Menu} from "./m02jsx/m02";
 import {m03, M03Menu} from "./m03pages/m03";
@@ -27,7 +27,7 @@ function init(app: Hono) {
 						</div>
 					</section>
 
-					{m00.menu()}
+					<M00Menu></M00Menu>
 					<M01Menu></M01Menu>
 					<M02Menu></M02Menu>
 					<M03Menu></M03Menu>
