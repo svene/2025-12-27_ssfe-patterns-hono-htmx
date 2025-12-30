@@ -21,7 +21,7 @@ export const Maincard = (props: MaincardProps) => {
 							</p>
 						)}
 						{props.recommendation && (
-							<p className="title is-6 mb-1">
+							<p className="subtitle is-6 mb-1">
 								{props.recommendation}
 							</p>
 						)}
