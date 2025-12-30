@@ -5,8 +5,7 @@ import {m01} from "./m01html/m01";
 import {m02} from "./m02jsx/m02";
 import {m03} from "./m03pages/m03";
 
-function init() {
-	const app = new Hono()
+function init(app: Hono) {
 	app.use('/static/*', serveStatic({ root: './' }))
 	app.get('/', (c) => {
 		return c.render(

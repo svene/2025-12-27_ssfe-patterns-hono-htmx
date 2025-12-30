@@ -1,4 +1,8 @@
+import {Hono} from "hono";
 import {mainpage} from "./mainpage";
 
-mainpage.init();
+const app = new Hono()
 
+mainpage.init(app);
+
+export default app;
