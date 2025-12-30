@@ -19,12 +19,14 @@ export const M00Menu = () => (
 					<Maincard
 						url="/hello/html"
 						title={<>Hello HTML</>}
+						subtitle={<>using HTML Helper</>}
 					>
 						<div>Demo...</div>
 					</Maincard>
 					<Maincard
 						url="/hellojsx/jsx"
 						title={<>Hello JSX</>}
+						subtitle={<>using JSX</>}
 					>
 						<div>Demo...</div>
 					</Maincard>
