@@ -10,10 +10,33 @@ function init(app: Hono) {
 	app.get('/', (c) => {
 		return c.render(
 			<>
-				{m00.menu()}
-				<M01Menu></M01Menu>
-				{m02.menu()}
-				{m03.menu()}
+				<html lang="en">
+				<head>
+					<meta charSet="UTF-8"/>
+					<title>Server Side Frontend Patterns</title>
+					<script src="/static/js/htmx.org/2.0.8/htmx.js"></script>
+					<link rel="stylesheet" href="/static/css/bulma.min.css"/>
+				</head>
+
+				<body>
+				<div className="container">
+					<section className="section">
+						<div className="container">
+							<h1 className="title">Server Side Frontend Patterns</h1>
+							<p className="subtitle">with HONO using plain HTML and JSX</p>
+						</div>
+					</section>
+
+					{m00.menu()}
+					<M01Menu></M01Menu>
+					{m02.menu()}
+					{m03.menu()}
+
+				</div>
+
+				</body>
+
+				</html>
 			</>
 		)
 	});
