@@ -10,9 +10,8 @@ function init(app: Hono) {
 	app.get('/', (c) => {
 		return c.render(
 			<>
-				<M01Menu></M01Menu>
 				{m00.menu()}
-				{m01.menu()}
+				<M01Menu></M01Menu>
 				{m02.menu()}
 				{m03.menu()}
 			</>
