@@ -1,4 +1,5 @@
 import {Hono} from "hono";
+import {ComponentChildren} from "hono/jsx";
 import { m01d01_init } from "./m01d01";
 import {M01D01} from "./m01d01";
 import {html} from "hono/html";
@@ -14,6 +15,12 @@ function init(app: Hono) {
 	m01d04.init(app);
 	m01d05.init(app);
 }
+
+export const M01Menu = () => (
+	<div className="area-border">
+		<h1>M01 Menu</h1>
+	</div>
+);
 
 function menu() {
 	return html`

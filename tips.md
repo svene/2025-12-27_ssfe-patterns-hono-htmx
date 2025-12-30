@@ -41,3 +41,27 @@ component.tsx
 const MyJSX = () => <strong>Hi from JSX!</strong>
 ````
 
+== return multiple siblings from a JSX component:
+
+JSX in general can only return one root JSX node.
+To return multiple siblings at the top level use:
+
+````
+app.get('/', (c) => {
+  return c.render(
+    <>
+      <div>
+      </div>
+    </>
+````
+
+If <> would not be supported use:
+````
+app.get('/', (c) => {
+  return c.render(
+    <Fragment>
+      <div>
+      </div>
+    </Fragment>
+````
+
