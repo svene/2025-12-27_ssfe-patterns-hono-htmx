@@ -2,8 +2,8 @@ import {Hono} from "hono";
 import { serveStatic } from 'hono/bun'
 import {m00} from "./m00hello/m00.ts";
 import {m01, M01Menu} from "./m01html/m01";
-import {m02} from "./m02jsx/m02";
-import {m03} from "./m03pages/m03";
+import {m02, M02Menu} from "./m02jsx/m02";
+import {m03, M03Menu} from "./m03pages/m03";
 
 function init(app: Hono) {
 	app.use('/static/*', serveStatic({ root: './' }))
@@ -29,8 +29,8 @@ function init(app: Hono) {
 
 					{m00.menu()}
 					<M01Menu></M01Menu>
-					{m02.menu()}
-					{m03.menu()}
+					<M02Menu></M02Menu>
+					<M03Menu></M03Menu>
 
 				</div>
 
