@@ -2,10 +2,12 @@ import {Hono} from "hono";
 import {m03d01} from "./m03d01";
 import {m03d02} from "./m03d02";
 import {Maincard} from "../c00jsxcomponents/maincard.tsx";
+import {m03d03} from "./m03d03.tsx";
 
 function init(app: Hono) {
 	m03d01.init(app);
 	m03d02.init(app);
+	m03d03.init(app);
 }
 
 export const M03Menu = () => (
@@ -29,6 +31,15 @@ export const M03Menu = () => (
 						title={<>Content Page</>}
 						subtitle={<>taking a parameter</>}
 						recommendation={<>When the page itself needs a parameter</>}
+					>
+						<div>Demo...</div>
+					</Maincard>
+
+					<Maincard
+						url={m03d03.URL + '?greeting=Hey You!'}
+						title={<>Custom Page</>}
+						subtitle={<>taking a parameter</>}
+						recommendation={<>When the opinionated content page does not fit</>}
 					>
 						<div>Demo...</div>
 					</Maincard>
