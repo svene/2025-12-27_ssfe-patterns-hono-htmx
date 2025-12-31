@@ -1,0 +1,7 @@
+.area-border {
+	border-color: white;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 4px;
+	padding: 3px;
+}

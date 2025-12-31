@@ -4,6 +4,7 @@ import {m00, M00Menu} from "./m00hello/m00";
 import {m01, M01Menu} from "./m01html/m01";
 import {m02, M02Menu} from "./m02jsx/m02";
 import {m03, M03Menu} from "./m03pages/m03";
+import {m04, M04Menu} from "./m04uipatterns/m04";
 
 function init(app: Hono) {
 	app.use('/static/*', serveStatic({ root: './' }))
@@ -31,11 +32,10 @@ function init(app: Hono) {
 					<M01Menu></M01Menu>
 					<M02Menu></M02Menu>
 					<M03Menu></M03Menu>
+					<M04Menu></M04Menu>
 
 				</div>
-
 				</body>
-
 				</html>
 			</>
 		)
@@ -45,6 +45,7 @@ function init(app: Hono) {
 	m01.init(app);
 	m02.init(app);
 	m03.init(app);
+	m04.init(app);
 }
 
 export const mainpage = {

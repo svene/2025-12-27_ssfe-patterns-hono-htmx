@@ -8,6 +8,7 @@ function init(app: Hono) {
 			<head>
 				<meta charset="UTF-8"/>
 				<link rel="stylesheet" href="/static/css/simplepage.css"/>
+				<link rel="stylesheet" href="/static/css/area_simple.css"/>
 			</head>
 
 			<body class="page">

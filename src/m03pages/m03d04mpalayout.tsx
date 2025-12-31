@@ -9,8 +9,7 @@ export const M03d04MpaLayout = (props: {selectedMenu: string, children: Componen
 		<title>Application/Page Patterns</title>
 		<script src="/static/js/htmx.org/2.0.8/htmx.js"></script>
 		<link rel="stylesheet" href="/static/css/bulma.min.css"/>
-		<link rel="stylesheet" href="/static/css/main.css"/>
-		<link rel="stylesheet" href="/static/css//simplepage.css"/>
+		<link rel="stylesheet" href="/static/css/area_bulma.css"/>
 	</head>
 
 	<body>
