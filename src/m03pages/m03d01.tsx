@@ -5,11 +5,11 @@ export const URL = '/m03/d01';
 function init(app: Hono) {
 	app.get(URL, (c) => {
 		return c.render(
-			<BulmaPage title="My Page">
-			<div>
-				<h1>M03D1 Page</h1>
+			<BulmaPage>
+			<>
+				<h1 class="title">Content Page</h1>
 				<hr/>
-			</div>
+			</>
 			</BulmaPage>
 		)
 	});

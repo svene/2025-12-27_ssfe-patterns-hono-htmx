@@ -9,8 +9,8 @@ function init(app: Hono) {
 export const M03Menu = () => (
 	<>
 		<section className="section">
-			<h1 className="title">Simple Pages using JSX</h1>
-			<h2 className="subtitle">Recommended for all non-trivial usecases. Needs an endpoint.</h2>
+			<h1 className="title">Page Patterns</h1>
+			<h2 className="subtitle">For Multi Page Applications (MPAs)<br/>or just a single page</h2>
 
 			<div className="fixed-grid">
 				<div className="grid">
