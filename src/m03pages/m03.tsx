@@ -3,8 +3,8 @@ import {m03d01} from "./m03d01";
 import {m03d02} from "./m03d02";
 import {Maincard} from "../c00jsxcomponents/maincard.tsx";
 import {m03d03} from "./m03d03.tsx";
-import {m03d04p1} from "./m03d04page1.tsx";
-import {m03d04p2} from "./m03d04page2.tsx";
+import {m03d04p1} from "./m03d04mpapage1.tsx";
+import {m03d04p2} from "./m03d04mpapage2.tsx";
 
 function init(app: Hono) {
 	m03d01.init(app);
