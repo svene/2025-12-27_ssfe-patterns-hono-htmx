@@ -1,9 +1,11 @@
 import {Hono} from "hono";
 import {m03d01} from "./m03d01";
+import {m03d02} from "./m03d02";
 import {Maincard} from "../c00jsxcomponents/maincard.tsx";
 
 function init(app: Hono) {
 	m03d01.init(app);
+	m03d02.init(app);
 }
 
 export const M03Menu = () => (
@@ -18,6 +20,15 @@ export const M03Menu = () => (
 						url={m03d01.URL}
 						title={<>Content Page</>}
 						recommendation={<>Recommended for most use cases</>}
+					>
+						<div>Demo...</div>
+					</Maincard>
+
+					<Maincard
+						url={m03d02.URL + '?greeting=Hey You!'}
+						title={<>Content Page</>}
+						subtitle={<>taking a parameter</>}
+						recommendation={<>When the page itself needs a parameter</>}
 					>
 						<div>Demo...</div>
 					</Maincard>
