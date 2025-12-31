@@ -1,4 +1,5 @@
-= Hono Tips
+= Hono Tips and Tricks
+
 == use html snippets in JSX:
 
 page.tsx:
@@ -171,3 +172,10 @@ export const Maincard = (props: MaincardProps) => {
 | simple show/hide | `&&`             |
 | needs else       | `?:`             |
 | complex logic    | `if` outside JSX |
+
+
+== Misc
+
+https://discord.com/channels/725789699527933952/1156332623233302578/1321068055068934145
+unfortunately jsx doesn't really have a syntax for adding attributes conditionally
+or adding html attributes that aren't valid xml attributes (e.g. hx-on::)
