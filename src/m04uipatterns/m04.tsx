@@ -1,9 +1,11 @@
 import {Hono} from "hono";
 import {Maincard} from "../c00jsxcomponents/maincard.tsx";
 import {m04d01} from "./m04d01";
+import {m04d02} from "./m04d02";
 
 function init(app: Hono) {
 	m04d01.init(app);
+	m04d02.init(app);
 }
 
 export const M04Menu = () => (
@@ -17,6 +19,13 @@ export const M04Menu = () => (
 					<Maincard
 						url={m04d01.URL}
 						title={<>Parent Child</>}
+					>
+						<div>Demo...</div>
+					</Maincard>
+
+					<Maincard
+						url={m04d02.URL}
+						title={<>Forwarder</>}
 					>
 						<div>Demo...</div>
 					</Maincard>

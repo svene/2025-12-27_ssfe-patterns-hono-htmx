@@ -1,0 +1,24 @@
+import {Hono} from "hono";
+import {BulmaPage} from "../c00jsxcomponents/bulmapage";
+import {First} from "./m04d02first.tsx";
+export const URL = '/m04/d02';
+
+function init(app: Hono) {
+	app.get(URL, (c) => {
+		return c.render(
+			<BulmaPage>
+				<>
+					<h1 class="title">Forwarder-Page</h1>
+					<First greeting="hello"></First>
+					<First greeting="hello with forward"></First>
+					<hr/>
+				</>
+			</BulmaPage>
+		)
+	});
+}
+
+export const m04d02 = {
+	URL,
+	init,
+}
