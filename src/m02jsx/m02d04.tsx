@@ -1,4 +1,5 @@
 import {Hono} from "hono";
+// docs:start page
 import {HelloWorldContentJsx} from "../c00jsxcomponents/helloworldcontentjsx.tsx";
 
 export const URL = '/m02/d04';
@@ -29,6 +30,7 @@ function init(app: Hono) {
 		)
 	});
 }
+// docs:end page
 
 export const m02d04 = {
 	URL,

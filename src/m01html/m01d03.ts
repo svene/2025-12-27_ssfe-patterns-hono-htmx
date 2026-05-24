@@ -1,5 +1,6 @@
 import {Hono} from "hono";
 import {html} from "hono/html"
+// docs:start page
 import {HelloWorldParams} from "../components/helloworldparams"
 
 const URL = '/m01/d03';
@@ -24,15 +25,15 @@ function init(app: Hono) {
 				-->
 				${HelloWorldParams({greeting: 'Hey', greetee})}
 				<hr>
-				${CODE}
+				<a href="http://localhost:4321/technologies/03_hono/m01/#3-page-and-component-with-parameters">Docs</a>
 			</div>
 			</body>
 			</html>`
 		)
 	})
-
 }
-const CODE = '';
+// docs:end page
+
 export const m01d03 = {
 	URL,
 	init,

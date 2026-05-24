@@ -1,5 +1,6 @@
 import {Hono} from "hono";
 import {html} from "hono/html"
+// docs:start page
 import {HelloWorldContent} from "../components/helloworldcontent"
 
 const URL = '/m01/d05';
@@ -29,9 +30,9 @@ function init(app: Hono) {
 			</html>`
 		)
 	})
+// docs:end page
 
 }
-const CODE = '';
 export const m01d05 = {
 	URL,
 	init,

@@ -1,14 +1,14 @@
 import {Hono} from "hono";
 import {html} from "hono/html"
-import {CODE} from "./m01d01_code";
 
+// docs:start page
 export const M01D01 = {
 	URL: '/m01/d01',
 }
 
 export function m01d01_init(app: Hono) {
-	app.get(M01D01.URL, (c) => {
-		return c.html(
+	app.get(M01D01.URL, (c) => { // <--- routing
+		return c.html( // <--- html()-template
 			html`<!DOCTYPE html>
 			<html lang="en">
 			<head>
@@ -20,11 +20,12 @@ export function m01d01_init(app: Hono) {
 			<body class="page">
 			<div>
 				<h1>Application Page</h1>
-				<hr>
-				${CODE}
 			</div>
+			<hr>
+			<a href="http://localhost:4321/technologies/03_hono/m01/#1-basic-page-using-a-html-template">Docs</a>
 			</body>
 			</html>`
 		)
 	});
 }
+// docs:end page

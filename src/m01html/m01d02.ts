@@ -1,5 +1,6 @@
 import {Hono} from "hono";
 import {html} from "hono/html"
+// docs:start page
 import {HELLO_WORLD} from "../components/helloworld"
 
 export const M01D02 = {
@@ -23,7 +24,7 @@ export function m01d02_init(app: Hono) {
 				<!-- Include Component: -->
 				${HELLO_WORLD}
 				<hr>
-				${CODE}
+				<a href="http://localhost:4321/technologies/03_hono/m01/#2-basic-page-using-a-html-component">Docs</a>
 			</div>
 			</body>
 			</html>`
@@ -31,4 +32,5 @@ export function m01d02_init(app: Hono) {
 	})
 
 }
-const CODE = '';
+// docs:end page
+
