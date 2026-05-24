@@ -1,4 +1,5 @@
 import {Hono} from "hono";
+// docs:start page
 import {HelloWorldJsx} from "../c00jsxcomponents/helloworldjsx";
 
 export const URL = '/m02/d02';
@@ -17,13 +18,17 @@ function init(app: Hono) {
 			<div>
 				<h1>Page with Component</h1>
 				<HelloWorldJsx/>
+				{/*docs:end page*/}
 				<hr/>
+				<a href="http://localhost:4321/technologies/03_hono/m02/#2-jsx-component-page">Docs</a>
+				{/*docs:start page*/}
 			</div>
 			</body>
 			</html>
 		)
 	});
 }
+// docs:end page
 
 export const m02d02 = {
 	URL,

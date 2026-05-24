@@ -1,3 +1,4 @@
+// docs:start component
 import {ComponentChildren} from "hono/jsx";
 
 export const HelloWorldNestedJsx = (props: { children: ComponentChildren }) => (
@@ -6,3 +7,4 @@ export const HelloWorldNestedJsx = (props: { children: ComponentChildren }) => (
 		{props.children}
 	</div>
 );
+// docs:end component

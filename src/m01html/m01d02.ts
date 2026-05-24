@@ -23,8 +23,10 @@ export function m01d02_init(app: Hono) {
 				<h1>Page with Component</h1>
 				<!-- Include Component: -->
 				${HELLO_WORLD}
+				{/*docs:end page*/}
 				<hr>
 				<a href="http://localhost:4321/technologies/03_hono/m01/#2-basic-page-using-a-html-component">Docs</a>
+				{/*docs:start page*/}
 			</div>
 			</body>
 			</html>`

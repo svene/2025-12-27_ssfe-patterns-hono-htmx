@@ -1,6 +1,7 @@
 import {Hono} from "hono";
-import {HelloWorldParamsJsx} from "../c00jsxcomponents/helloworldparamsjsx.tsx";
 import { raw } from "hono/html";
+// docs:start page
+import {HelloWorldParamsJsx} from "../c00jsxcomponents/helloworldparamsjsx.tsx";
 
 export const URL = '/m02/d03';
 
@@ -23,15 +24,19 @@ function init(app: Hono) {
 				Second parameter coming in from HTTP-request:
 				*/}
 				<HelloWorldParamsJsx greeting="Hey" greetee={greetee}/>
+				{/*docs:end page*/}
 				<hr/>
+				<a href="http://localhost:4321/technologies/03_hono/m02/#3-page-and-component">Docs</a>
 				{/* TODO: move to HONO demos: how to render HTML comment inside JSX */}
 				{raw('<!-- This WILL be rendered into the HTML -->')}
+				{/*docs:start page*/}
 			</div>
 			</body>
 			</html>
 		)
 	});
 }
+// docs:end page
 
 export const m02d03 = {
 	URL,

@@ -22,7 +22,9 @@ export function m01d01_init(app: Hono) {
 				<h1>Application Page</h1>
 			</div>
 			<hr>
+			{/*docs:end page*/}
 			<a href="http://localhost:4321/technologies/03_hono/m01/#1-basic-page-using-a-html-template">Docs</a>
+			{/*docs:start page*/}
 			</body>
 			</html>`
 		)

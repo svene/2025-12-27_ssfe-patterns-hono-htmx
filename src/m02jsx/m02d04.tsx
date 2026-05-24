@@ -23,7 +23,10 @@ function init(app: Hono) {
 					Hopefully <strong>very well</strong>.<br/>
 					<p>See you soon!</p>
 				</HelloWorldContentJsx>
+				{/*docs:end page*/}
 				<hr/>
+				<a href="http://localhost:4321/technologies/03_hono/m02/#4-content-parameter">Docs</a>
+				{/*docs:start page*/}
 			</div>
 			</body>
 			</html>

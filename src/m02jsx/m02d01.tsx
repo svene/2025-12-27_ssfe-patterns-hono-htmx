@@ -1,4 +1,5 @@
 import {Hono} from "hono";
+// docs:start page
 export const URL = '/m02/d01';
 
 function init(app: Hono) {
@@ -14,13 +15,18 @@ function init(app: Hono) {
 			<body class="page">
 			<div>
 				<h1>Application Page</h1>
+				{/*docs:end page*/}
 				<hr/>
+				<a href="http://localhost:4321/technologies/03_hono/m02/#1-basic-jsx-page">Docs</a>
+				{/*docs:start page*/}
 			</div>
 			</body>
 			</html>
 		)
 	});
 }
+
+// docs:end page
 
 export const m02d01 = {
 	URL,
