@@ -1,5 +1,6 @@
 import {html} from "hono/html"
 
+// docs:start component
 export const HEAD = html`
 	<head>
 		<meta charset="UTF-8">
@@ -8,3 +9,4 @@ export const HEAD = html`
 		<link rel="stylesheet" href="/static/css/bulma.min.css"/>
 		<link rel="stylesheet" href="/static/css/area_bulma.css"/>
 	</head>`;
+// docs:end component

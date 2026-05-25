@@ -25,7 +25,6 @@ function init(app: Hono) {
 		)
 	});
 }
-
 // docs:end page
 
 export const m02d01 = {

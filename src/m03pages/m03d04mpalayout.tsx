@@ -1,4 +1,5 @@
 import type { ComponentChildren } from 'hono/jsx'
+// docs:start page
 import {m03d04p1} from "./m03d04mpapage1.tsx";
 import {m03d04p2} from "./m03d04mpapage2.tsx";
 
@@ -34,7 +35,10 @@ export const M03d04MpaLayout = (props: {selectedMenu: string, children: Componen
 			{props.children}
 		</div>
 
+		{/*docs:end page*/}
 		<hr/>
+		<a href="http://localhost:4321/technologies/03_hono/m03/#4-mpa-example">Docs</a>
+		{/*docs:start page*/}
 
 	</div>
 
@@ -42,4 +46,5 @@ export const M03d04MpaLayout = (props: {selectedMenu: string, children: Componen
 	</body>
 	</html>
 );
+// docs:end page
 

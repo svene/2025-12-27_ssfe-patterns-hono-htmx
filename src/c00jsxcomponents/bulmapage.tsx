@@ -1,4 +1,5 @@
 import type { ComponentChildren } from 'hono/jsx'
+// docs:start component
 import {HEAD} from "../components/head";
 
 export const BulmaPage = (props: { children: ComponentChildren }) => (
@@ -15,4 +16,5 @@ export const BulmaPage = (props: { children: ComponentChildren }) => (
 	</body>
 	</html>
 );
+// docs:end component
 
