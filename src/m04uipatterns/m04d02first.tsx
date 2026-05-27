@@ -1,5 +1,6 @@
 import {Second} from "./m04d02second.tsx";
 
+// docs:start component
 export const First = (props: { greeting: string }) => {
 	return props.greeting.includes('forward')
 		? (
@@ -7,3 +8,4 @@ export const First = (props: { greeting: string }) => {
 		)
 		: (<div>First: {props.greeting}</div>);
 };
+// docs:end component

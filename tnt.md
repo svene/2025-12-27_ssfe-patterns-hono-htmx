@@ -119,8 +119,8 @@ app.get("/", (c) => {
 
 ````
 type MaincardProps = {
-	title: ComponentChildren
-	subtitle?: ComponentChildren
+	title: Child
+	subtitle?: Child
 }
 
 export const Maincard = (props: MaincardProps) => {
@@ -143,7 +143,7 @@ more complex condition:
 
 ````
 type MaincardProps = {
-	title: ComponentChildren
+	title: Child
 	count: number
 }
 

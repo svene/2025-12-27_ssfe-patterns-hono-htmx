@@ -1,9 +1,9 @@
-import type { ComponentChildren } from 'hono/jsx'
+import type { Child } from 'hono/jsx'
 // docs:start page
 import {m03d04p1} from "./m03d04mpapage1.tsx";
 import {m03d04p2} from "./m03d04mpapage2.tsx";
 
-export const M03d04MpaLayout = (props: {selectedMenu: string, children: ComponentChildren }) => (
+export const M03d04MpaLayout = (props: {selectedMenu: string, children: Child }) => (
 	<html lang="en">
 	<head>
 		<meta charSet="UTF-8"/>

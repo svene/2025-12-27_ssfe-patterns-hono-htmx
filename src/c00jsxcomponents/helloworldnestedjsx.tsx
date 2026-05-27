@@ -1,7 +1,7 @@
 // docs:start component
-import {ComponentChildren} from "hono/jsx";
+import {Child} from "hono/jsx";
 
-export const HelloWorldNestedJsx = (props: { children: ComponentChildren }) => (
+export const HelloWorldNestedJsx = (props: { children: Child }) => (
 	<div className="area-border">
 		<p>Hi there!</p>
 		{props.children}

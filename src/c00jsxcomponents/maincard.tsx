@@ -1,11 +1,11 @@
-import {ComponentChildren} from "hono/jsx";
+import {Child} from "hono/jsx";
 
 type MaincardProps = {
 	url: string
-	title: ComponentChildren
-	subtitle?: ComponentChildren
-	recommendation?: ComponentChildren
-	children: ComponentChildren
+	title: Child
+	subtitle?: Child
+	recommendation?: Child
+	children: Child
 }
 
 export const Maincard = (props: MaincardProps) => {

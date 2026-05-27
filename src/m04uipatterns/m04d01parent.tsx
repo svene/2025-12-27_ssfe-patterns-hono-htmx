@@ -1,12 +1,14 @@
-import {Child} from "./m04d01child.tsx";
+import {TheChild} from "./m04d01child.tsx";
 
+// docs:start component
 export const Parent = (props: { greeting: string }) => (
 	<>
 		<h3>Parent</h3>
 		<div class="area-border p-1">
-			<Child>
+			<TheChild>
 				<>slot-content from parent. Greeting: {props.greeting}</>
-			</Child>
+			</TheChild>
 		</div>
 	</>
 );
+// docs:end component

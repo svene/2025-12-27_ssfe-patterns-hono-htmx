@@ -1,7 +1,9 @@
-import {ComponentChildren} from "hono/jsx";
+import {Child} from "hono/jsx";
 
-export const Child = (props: { children: ComponentChildren }) => (
+// docs:start component
+export const TheChild = (props: { children: Child }) => (
 	<div>
 		Child: <span style="color: var(--bulma-warning)">{props.children}</span>
 	</div>
 );
+// docs:end component

@@ -1,4 +1,5 @@
 import {Hono} from "hono";
+// docs:start component
 export const URL = '/m05/d01/message';
 
 function init(app: Hono) {
@@ -14,3 +15,4 @@ export const m05d01message = {
 	URL,
 	init,
 }
+// docs:end component

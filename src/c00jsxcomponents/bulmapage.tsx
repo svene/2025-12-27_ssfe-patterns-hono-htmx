@@ -1,8 +1,8 @@
-import type { ComponentChildren } from 'hono/jsx'
+import type { Child } from 'hono/jsx'
 // docs:start component
 import {HEAD} from "../components/head";
 
-export const BulmaPage = (props: { children: ComponentChildren }) => (
+export const BulmaPage = (props: { children: Child }) => (
 	<html lang="en">
 	{HEAD}
 
