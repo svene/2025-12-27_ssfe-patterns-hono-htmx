@@ -17,7 +17,7 @@ function init(app: Hono) {
 					<meta charSet="UTF-8"/>
 					<title>Server Side Frontend Patterns</title>
 					<script src="/static/js/htmx.org/4.0.0/htmx.js"></script>
-					<link rel="stylesheet" href="/static/css/bulma.min.css"/>
+					<link rel="stylesheet" href="/static/css/bulma/1.0.4/bulma.min.css"/>
 				</head>
 
 				<body>

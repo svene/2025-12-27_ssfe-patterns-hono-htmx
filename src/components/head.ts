@@ -6,7 +6,7 @@ export const HEAD = html`
 		<meta charset="UTF-8">
 		<title>Application Page</title>
 		<script src="/static/js/htmx.org/4.0.0/htmx.js"></script>
-		<link rel="stylesheet" href="/static/css/bulma.min.css"/>
+		<link rel="stylesheet" href="/static/css/bulma/1.0.4/bulma.min.css"/>
 		<link rel="stylesheet" href="/static/css/area_bulma.css"/>
 	</head>`;
 // docs:end component
