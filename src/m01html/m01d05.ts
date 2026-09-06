@@ -24,10 +24,10 @@ function init(app: Hono) {
 						${HelloWorldContent({greetingText: html`<p>NESTED CONTENT</p>`})} <!-- Nested template -->
 						<p>after nested content</p>
 					`})}
-				{/*docs:end page*/}
+				<!-- docs:end page -->
 				<hr>
 				<a href="http://localhost:4321/technologies/03_hono/m01/#5-nested-components">Docs</a>
-				{/*docs:start page*/}
+				<!-- docs:start page -->
 			</div>
 			</body>
 			</html>`

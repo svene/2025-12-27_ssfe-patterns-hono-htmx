@@ -24,10 +24,10 @@ function init(app: Hono) {
 				Second parameter coming in from HTTP-request:
 				-->
 				${HelloWorldParams({greeting: 'Hey', greetee})}
-				{/*docs:end page*/}
+				<!-- docs:end page -->
 				<hr>
 				<a href="http://localhost:4321/technologies/03_hono/m01/#3-page-and-component-with-parameters">Docs</a>
-				{/*docs:start page*/}
+				<!-- docs:start page -->
 			</div>
 			</body>
 			</html>`
